@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js " defer></script>
+  </head>
+
+  <body>
+    <div class="fullbody">
+      <header class="header">
+        <h1 class="heading">Budget Calculation</h1>
+        <div class="earnExp maxWidth">
+          <div class="earn design">
+            <h3 class="heading3earn">Earning</h3>
+            <input type="number" name="" id="" placeholder="Enter Amount" />
+            <input type="text" name="" id="" placeholder="Revanue From" />
+            <input type="submit" class="btn" value="+ Add" name="" id="" />
+          </div>
+          <div class="exp design">
+            <h3 class="heading3exp">Expenses</h3>
+            <input type="number" name="" id="" placeholder="Enter Amount" />
+            <input type="text" name="" id="" placeholder="Expense Category" />
+            <input type="submit" class="btn" id="" value="+ Add" />
+          </div>
+        </div>
+
+        <div class="text maxWidth flexSB minHeight">
+          <span
+            >Total Revanue <br />
+            <span class="textAmt txtRevAm">0</span></span
+          >
+          <span
+            >Expenses <br />
+            <span class="textAmt txtExpAm">0</span></span
+          >
+        </div>
+
+        <div class="sortBtn maxWidth flexSB minHeight">
+          <span>Sort By</span>
+          <div class="amountSort">
+            <button class="incrAmt btn">PRICE ⬆️</button>
+            <button class="decrAmt btn">PRICE ⬇️</button>
+          </div>
+          <div class="letterSort">
+            <button class="incrAlp btn">LETTER ⬆️</button>
+            <button class="decrAlp btn">LETTER ⬇️</button>
+          </div>
+        </div>
+
+        <div class="text maxWidth flexSB minHeight">
+          <div class="txt">Category</div>
+          <div class="txt">Debit/Credit</div>
+          <div class="txt">Edit/Delete</div>
+        </div>
+
+        <div class="budgetList maxWidth">
+          <ul class="ulList"></ul>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

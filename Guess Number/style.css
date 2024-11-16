@@ -1,0 +1,95 @@
+body{
+    background: linear-gradient(rgb(117, 224, 253),rgb(33, 98, 123),rgb(58, 58, 58));
+}
+.fullbody {
+    max-width: 1200px;
+    width: 95vw;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background: initial;
+    max-width: 700px;
+    width: 90vw;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow:inset 5px 5px 25px rgba(0, 225, 255, 0.159),inset  -11px -10px 10px rgba(127, 127, 127, 0);
+    backdrop-filter: blur(20px);
+}
+.hide{
+    display: none;
+}
+
+.design{
+    line-height: 2rem;
+    padding:1.5rem;
+    max-width: 700px;
+    width: 92%;
+    margin: 3rem auto;
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px red;
+}
+input,.btn{
+    display: block;
+    margin:2rem auto;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    background: rgb(195, 237, 255);
+}
+input[type="text"]{
+    height: 10vh;
+    width: 150px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    color: #000;
+    transition: all 0.8s;
+}
+.btn{
+    padding: 1.5rem 3rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.btn:hover,
+input[type="text"]:hover,
+input[type="text"]:focus{
+    background: linear-gradient(rgb(117, 224, 253),rgb(255, 193, 193));
+    box-shadow: 0px 0px 10px blue;
+    scale: 1.02;
+}
+.lastHeading{
+    display: none;
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+}
+.findAgain{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 1rem 3rem ;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: linear-gradient(rgb(117, 224, 253),rgb(255, 193, 193));
+    border-radius: 15px;
+}

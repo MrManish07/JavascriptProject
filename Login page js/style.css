@@ -1,0 +1,109 @@
+body{
+    height: 100vh;
+    background:radial-gradient(rgb(32, 32, 32),rgb(112, 112, 112),rgb(153, 153, 153),rgb(255, 255, 255));
+}
+.fullbody {
+    background: linear-gradient(rgb(209, 255, 253), #ffe6e6);
+    min-height: 50vh;
+    max-width: 90vw;
+    margin: auto;
+    min-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.form {
+    min-width: 90%;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(rgb(164, 250, 253) , rgb(255, 208, 208));
+    border-radius: 20px;
+}
+
+input {
+    padding: 1.2rem;
+    border-radius: 20px;
+    margin: 1rem;
+    font-weight: 700;
+    transition: all 1s;
+    font-size: 1.2rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input[type="text"] {
+    background: rgb(255, 255, 255);
+    max-width: 78%;
+    min-width: 70%;
+    border: none;
+    box-shadow: 0px 0px 2px rgb(117, 117, 117);
+}
+
+input[type="submit"] {
+    background: rgb(255, 255, 255);
+    max-width: 20%;
+    min-width: 20%;
+    box-shadow: 0px 0px 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+    background: linear-gradient(#ffe6e6, rgb(209, 255, 253));
+    box-shadow: 0px 0px 10px;
+}
+
+input[type="text"]:hover,input[type="text"]:focus  {
+    background: linear-gradient(#ffe6e6, rgb(209, 255, 253));
+    box-shadow: 0px 0px 10px;
+}
+
+.heading {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    text-align: center;
+    border: 2px solid rgb(177, 177, 177);
+    padding: 1rem;
+    border-radius: 20px;
+    background: linear-gradient(#ffe6e6, rgb(209, 255, 253));
+    display: none;
+}
+
+.btn {
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    max-width: 1200px;
+    text-align: center;
+    border: 2px solid rgb(177, 177, 177);
+    padding: 1rem;
+    border-radius: 20px;
+    background: linear-gradient(#ffe6e6, rgb(209, 255, 253));
+    display: none;
+    transition: all 0.5s;
+}
+.btn:hover {
+    scale: 1.02;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 4px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}

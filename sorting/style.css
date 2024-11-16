@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+li{
+list-style:none;
+border-bottom:2px solid black ;
+}
+:root {
+    --textColor:red;
+    --dualColor:linear-gradient(red, yellow);
+    --bgColor:green;
+    --fontOne:1.4rem;
+    --fontTwo: 1rem;
+}
+.maxWidth{
+    width: min(1200px,90%);
+    margin: auto;
+    background: rgb(255, 255, 255);
+    min-height: 10vh;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

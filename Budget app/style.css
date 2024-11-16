@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --firstOne: rgb(31, 145, 252);
+    --secondOne: #091927;
+    --thirdOne: rgb(175, 252, 255);
+    --fourthOne: rgb(22, 79, 135);
+}
+
+li {
+    list-style: none;
+}
+
+.fullbody {
+    background: linear-gradient(var(--firstOne), var(--secondOne));
+    max-width: 100vw;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background: linear-gradient(var(--fourthOne), var(--secondOne));
+    max-width: 1000px;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-height: auto;
+    border-radius: 40px;
+    margin-top: 2rem;
+}
+
+.earnExp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 1;
+    flex-shrink: 1;
+}
+
+.maxWidth {
+    max-width: 900px;
+    min-width: 95%;
+    font-size: 1.3rem;
+}
+
+.design {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 1;
+    flex-shrink: 1;
+    width: 400px;
+    background: linear-gradient(var(--firstOne), var(--secondOne));
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 20px var(--fourthOne), inset -2px -5px 12px var(--firstOne);
+}
+
+.heading {
+    color: rgb(70, 209, 255);
+    background: radial-gradient( rgb(90, 167, 255),rgb(126, 255, 195));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    margin: 1.2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    border: inset 2px solid var(--thirdOne);
+    border:2px solid red ;
+}
+
+.design h3 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--secondOne);
+    border-radius: 15px;
+    background: inherit;
+    box-shadow: inset 2px 2px 20px var(--secondOne), inset -2px -2px 10px var(--secondOne);
+}
+
+.heading3earn {
+    color: rgb(11, 255, 19);
+}
+
+.heading3exp {
+    color: rgb(203, 0, 0);
+}
+
+
+input {
+    width: 70%;
+    padding: 1.2rem;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+input[type="submit"] {
+    font-size: 1.2rem;
+    width: 50%;
+    background: inset linear-gradient(var(--thirdOne), var(--firstOne));
+    margin-bottom: 2.5rem;
+    box-shadow: inset;
+}
+
+.earn .btn[type="submit"] {
+    color: rgb(0, 255, 0);
+}
+
+.exp .btn[type="submit"] {
+    color: rgb(255, 17, 64);
+    ;
+}
+
+.minHeight {
+    min-height: 8vh;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+
+.flexSB {
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(var(--firstOne), var(--secondOne));
+    margin: 1rem;
+    text-align: center;
+    box-shadow: inset 2px 5px 30px var(--secondOne), inset -5px -5px 12px var(--secondOne);
+}
+
+.textAmt {
+    font-size: 1.6rem;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.txtRevAm {
+    color: rgb(0, 188, 35);
+}
+
+.txtExpAm {
+    color: rgb(199, 1, 1);
+}
+
+ul {
+    min-width: 100%;
+}
+
+li {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    background: linear-gradient(var(--firstOne), var(--secondOne));
+    box-shadow: inset 2px 5px 30px var(--secondOne), inset -5px -5px 12px var(--secondOne);
+
+    min-height: 10vh;
+    margin-bottom: 1rem;
+    padding: 1.2rem;
+    border-radius: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.listBtn button {
+    background: transparent;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background: var(--fourthOne);
+    backdrop-filter: blur(200px);
+    cursor: pointer;
+}
+
+.btn {
+    color: whitesmoke;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 0.8rem;
+    cursor: pointer;
+    box-shadow: inset 7px 7px 25px var(--secondOne);
+    background: linear-gradient(inset var(--thirdOne), var(--firstOne));
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    box-shadow: inset 3px 3px 15px var(--secondOne), inset -2px -2px 20px var(--secondOne);
+    scale: 1.03;
+}
+
+.decrAmt,
+.decrAlp {
+    display: none;
+}
+
+.dr {
+    color: rgb(190, 3, 3);
+}
+
+.cr {
+    color: rgb(0, 216, 0);
+}

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+list-style:none
+}
+:root {
+    --textColor:red;
+    --dualColor:linear-gradient(red, yellow);
+    --bgColor:green;
+    --fontOne:1.4rem;
+    --fontTwo: 1rem;
+}
+body{
+    background: linear-gradient(rgb(255, 154, 236),rgb(255, 233, 193));
+    min-height: 100vh;
+}
+header{
+    background: rgb(255, 226, 252);
+    width: min(800px,80vw);
+    margin: 2rem auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    border-radius: 20px;
+}
+.navHeader{
+    background: linear-gradient( rgb(255, 233, 193),rgb(255, 154, 236));
+    display: flex;
+   width:min(500px,90%) ;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+h1{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1::after{
+    font-size: 1rem;
+    text-align: center;
+    content: attr(data);
+    position: absolute;
+    width: 50px;
+    height:50px;
+    top: 48%;
+    margin-top:25px;
+}
+span{
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 5px;
+
+}

@@ -1,0 +1,24 @@
+body{
+    transition:all 2s ease-out;
+}
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#btn{
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    min-height: 3rem;
+    box-shadow: 2px 0px 10px ;
+    transition: all 0.7s ease-in-out;
+}
+#btn:hover{
+    scale: 1.05;
+}
+.heading{
+    transition: all 0.5s;
+}
